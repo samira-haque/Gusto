@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusto - Rare Hot Sauce Subscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar py-2 text-center">
+        <span class="fw-bold">This month:</span> Ghost Pepper & Blueberry from Maine.
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="Gusto Logo" height="50" class="d-inline-block align-text-top me-2 logo-img">
+                GUSTO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interactive">Explore</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Embark on a Global Heat Quest</h1>
+            <p class="lead mb-5">Discover rare, small-batch hot sauces and condiments from around the world.</p>
+            <a href="#interactive" class="btn btn-lg btn-primary cta-btn">Start Your Journey</a>
+        </div>
+        <div class="video-background">
+             <!-- Placeholder for video background if needed, or use CSS gradient/image -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Why Gusto?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <h3 class="card-title h4">Maker Stories</h3>
+                            <p class="card-text">Meet the artisans behind every bottle with exclusive videos and interviews.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <h3 class="card-title h4">Recipe Pairings</h3>
+                            <p class="card-text">Expertly curated recipe cards to elevate your meals with the perfect heat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 feature-card text-center p-4">
+                        <div class="card-body">
+                            <h3 class="card-title h4">Scoville Tracking</h3>
+                            <p class="card-text">Track your heat tolerance and discover your perfect spice level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" class="py-5 bg-darker">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mb-4 section-title">Heat & Flavor Explorer</h2>
+                    <div id="flavor-explorer" class="p-4 border rounded">
+                        <!-- JS will populate this -->
+                        <p class="text-center">Loading Explorer...</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4 section-title">Sauce Match Quiz</h2>
+                    <div id="sauce-quiz" class="p-4 border rounded">
+                        <!-- JS will populate this -->
+                         <button class="btn btn-outline-light w-100" onclick="startQuiz()">Find My Match</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Gusto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
